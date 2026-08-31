@@ -20,9 +20,7 @@
  */
 class Solution {
     public int[] nodesBetweenCriticalPoints(ListNode head) {
-        if (head == null || head.next == null || head.next.next == null) {
-            return new int[]{-1, -1};
-        }
+        if (head == null || head.next == null || head.next.next == null) return new int[]{-1, -1};
         ListNode prev = head;
         ListNode curr = head.next;
         int currentIndex = 2;
